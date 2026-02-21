@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors */
+  --color-night-sky: #0A0F23;
+  --color-deep-navy: #0E1F2F;
+  --color-midnight: #152A3A;
+  --color-firelight: #FAE4CF;
+  --color-ember: #FF5E2B;
+  --color-warm-gold: #F0B866;
+  --color-ash: #8A9BAE;
+  --color-smoke: #3D4F63;
+  --color-ivory: #F4F3E1;
+
+  /* Font families */
+  --font-display: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-heading: var(--font-dm-serif), "DM Serif Display", serif;
+  --font-sans: var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
+
+  /* Animations */
+  --animate-fox-pulse: foxPulse 3s ease-in-out infinite;
+  --animate-tail-wag: tailWag 0.6s ease-in-out infinite alternate;
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-fade-up: fadeUp 1s ease-out;
+  --animate-shimmer: shimmer 3s ease-in-out infinite;
+  --animate-fire-flicker: fireflicker 2s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-night-sky);
+  color: var(--color-firelight);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(255, 94, 43, 0.27);
+  color: var(--color-firelight);
+}
+
+/* CTA Button */
+@layer components {
+  .cta-btn {
+    padding: 14px 32px;
+    border-radius: 999px;
+    border: none;
+    background: var(--color-ember);
+    color: var(--color-firelight);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    transition: all 0.25s ease;
+    box-shadow: 0 0 20px rgba(255, 94, 43, 0.27);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(255, 94, 43, 0.4), 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Keyframes */
+@keyframes foxPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes tailWag {
+  0% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: var(--p-opacity, 0.2);
+  }
+  50% {
+    transform: translateY(-40px) translateX(10px);
+    opacity: calc(var(--p-opacity, 0.2) * 2);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes fireflicker {
+  0%, 100% { opacity: 1; }
+  25% { opacity: 0.85; }
+  50% { opacity: 0.95; }
+  75% { opacity: 0.88; }
+}
