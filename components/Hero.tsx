@@ -54,7 +54,7 @@ export default function Hero() {
             <EmailCapture />
           </div>
 
-          <div className="text-xs text-smoke mt-3">
+          <div className="text-xs text-smoke mt-3 mb-6 lg:mb-0">
             Join 200+ people already on the waitlist. No spam, just fire.
           </div>
         </div>

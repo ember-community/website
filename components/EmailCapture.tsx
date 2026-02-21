@@ -30,7 +30,7 @@ export default function EmailCapture() {
   }
 
   return (
-    <div className="flex gap-2.5 flex-wrap">
+    <div className="flex gap-2.5 flex-wrap justify-center lg:justify-start">
       <input
         type="email"
         placeholder="your@email.com"
