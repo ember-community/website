@@ -13,16 +13,20 @@ export default function FinalCTA() {
         </div>
 
         <h2 className="font-display text-[44px] font-bold mb-3">
-          Ready to sit by the fire?
+          Ready to find your voice?
         </h2>
 
         <p className="text-ash text-base max-w-[440px] mx-auto leading-relaxed mb-8">
-          Join the waitlist and be the first to meet your fox coach when Ember
+          50 topics. 2 minutes a day. One friendly fox. Get notified when Ember
           launches.
         </p>
 
         <div className="flex justify-center">
           <EmailCapture />
+        </div>
+
+        <div className="text-xs text-smoke mt-4">
+          iOS · No Account · 100% Offline
         </div>
       </div>
     </section>

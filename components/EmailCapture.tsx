@@ -44,7 +44,7 @@ export default function EmailCapture() {
         onClick={handleSubmit}
         disabled={status === "loading"}
       >
-        {status === "loading" ? "Joining..." : "Join Waitlist"}
+        {status === "loading" ? "Submitting..." : "Notify Me"}
       </button>
     </div>
   );

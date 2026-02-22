@@ -1,25 +1,18 @@
-import Fox from "./Fox";
-
-type FoxState = "idle" | "recording" | "happy";
-
-const steps: { step: string; title: string; desc: string; fox: FoxState }[] = [
+const steps = [
   {
     step: "01",
-    title: "Get a Topic",
-    desc: "Open the app and receive today's speaking prompt. Storytelling, opinions, pitches — a new challenge every day.",
-    fox: "idle",
+    title: "Spin a Topic",
+    desc: "Open the app and spin the reel. 50 prompts across storytelling, opinions, pitches, reflections, and freestyle — or browse and pick your own.",
   },
   {
     step: "02",
     title: "Speak for 2 Minutes",
-    desc: "Hit the ember button and speak freely. No scripts, no pressure. Just you and the fire.",
-    fox: "recording",
+    desc: "Tap start and speak freely. A clean timer counts you down. No scripts, no pressure. Just you and the fire.",
   },
   {
     step: "03",
-    title: "Get Feedback",
-    desc: "Your fox coach analyzes your recording and highlights exactly where to improve. Track your growth over time.",
-    fox: "happy",
+    title: "Build Your Streak",
+    desc: "Complete a session and watch your streak grow. Track your consistency with weekly dots and keep the fire burning.",
   },
 ];
 
@@ -43,17 +36,22 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-6 md:gap-0 items-stretch">
           {steps.map((s, i) => (
-            <div key={i} className="text-center">
-              <div className="font-mono text-5xl font-bold text-ember/20 mb-4">
-                {s.step}
+            <div key={i} className="contents">
+              <div className="bg-deep-navy rounded-[20px] p-7 border border-smoke/20 transition-all duration-300 hover:-translate-y-1 hover:border-ember/[0.27] flex flex-col">
+                <div className="inline-block self-start font-mono text-xs font-bold text-ember bg-ember/10 px-2.5 py-1 rounded-full mb-4">
+                  {s.step}
+                </div>
+                <div className="font-heading text-xl mb-2">{s.title}</div>
+                <div className="text-sm text-ash leading-relaxed">{s.desc}</div>
               </div>
-              <div className="flex justify-center mb-4">
-                <Fox size={80} state={s.fox} />
-              </div>
-              <div className="font-heading text-xl mb-2">{s.title}</div>
-              <div className="text-sm text-ash leading-relaxed">{s.desc}</div>
+
+              {i < steps.length - 1 && (
+                <div className="hidden md:flex items-center justify-center px-4 text-smoke/40 text-2xl select-none">
+                  →
+                </div>
+              )}
             </div>
           ))}
         </div>

@@ -3,8 +3,7 @@ import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
-import Coaches from "@/components/Coaches";
-import KitsuneChallenge from "@/components/KitsuneChallenge";
+import TopicShowcase from "@/components/TopicShowcase";
 import Vision from "@/components/Vision";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -17,8 +16,7 @@ export default function Home() {
       <SocialProof />
       <Features />
       <HowItWorks />
-      <Coaches />
-      <KitsuneChallenge />
+      <TopicShowcase />
       <Vision />
       <FinalCTA />
       <Footer />

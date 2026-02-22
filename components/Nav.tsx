@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const links = ["Features", "How It Works", "Coaches"];
+const links = ["Features", "How It Works", "Topics"];
 
 export default function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,10 +29,10 @@ export default function Nav() {
           </a>
         ))}
         <a
-          href="#waitlist"
+          href="#notify"
           className="cta-btn !px-6 !py-2.5 !text-[13px] no-underline"
         >
-          Join Waitlist
+          Get Notified
         </a>
       </div>
 
@@ -61,11 +61,11 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#waitlist"
+            href="#notify"
             className="cta-btn text-center !text-sm"
             onClick={() => setMobileOpen(false)}
           >
-            Join Waitlist
+            Get Notified
           </a>
         </div>
       )}

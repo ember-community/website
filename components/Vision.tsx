@@ -35,10 +35,11 @@ export default function Vision() {
         </h2>
 
         <p className="text-ash text-[15px] leading-relaxed max-w-[500px] mx-auto">
-          Ember was born from a simple realization: talking to a camera is hard.
-          Storytelling doesn&apos;t come naturally. But with daily practice and
-          honest feedback, anyone can find their voice. We&apos;re building the
-          gym for your communication skills.
+          Long before screens, people gathered around fires to share stories —
+          to make sense of the world, to connect, to be heard. Ember brings
+          that back. Speaking out loud is hard. Storytelling doesn&apos;t come
+          naturally. But with daily practice and the right advice, anyone can
+          find their words. Two minutes a day, one topic at a time.
         </p>
       </div>
     </section>

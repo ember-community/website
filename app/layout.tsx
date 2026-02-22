@@ -29,11 +29,11 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ember — Find Your Voice by the Fire",
   description:
-    "Practice speaking 2 minutes a day. Get AI-powered feedback from your personal fox coach. Track your progress as your campfire grows.",
+    "Daily speaking practice. Spin a topic, speak for 2 minutes, build your streak. 50 curated prompts, guided by a friendly fox.",
   openGraph: {
     title: "Ember — Find Your Voice by the Fire",
     description:
-      "Practice speaking 2 minutes a day. Get AI-powered feedback from your personal fox coach.",
+      "Daily speaking practice. 2 minutes. 50 topics. Your voice.",
     images: ["/og-image.svg"],
     type: "website",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ember — Find Your Voice by the Fire",
     description:
-      "Practice speaking 2 minutes a day. Get AI-powered feedback from your personal fox coach.",
+      "Daily speaking practice. 2 minutes. 50 topics. Your voice.",
     images: ["/og-image.svg"],
   },
 };

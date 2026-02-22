@@ -1,33 +1,33 @@
 const features = [
   {
-    icon: "🎯",
-    title: "Daily Topics",
-    desc: "A new speaking prompt every day — storytelling, opinions, pitches, reflections. Never run out of things to say.",
+    icon: "🎰",
+    title: "Spin for a Topic",
+    desc: "A slot-machine reel with 50 speaking prompts. Spin to discover your next challenge, or browse and pick your own.",
   },
   {
     icon: "🎙️",
-    title: "2-Minute Recording",
-    desc: "Hit record and speak freely for 2 minutes. Short enough to fit in your morning routine. Long enough to build real skill.",
+    title: "2-Minute Focus Sessions",
+    desc: "A clean timer with circular progress, pause, and stop. Short enough for your morning routine, long enough to build real skill.",
   },
   {
     icon: "🦊",
-    title: "AI Fox Coach",
-    desc: "Your fox analyzes clarity, conciseness, filler words, pacing, and engagement. Real feedback, not empty praise.",
+    title: "Your Fox Companion",
+    desc: "A friendly fox mascot guides your practice. It reacts to your progress and keeps you company by the fire.",
   },
   {
-    icon: "📊",
-    title: "Progress Tracking",
-    desc: "Watch your scores improve over days, weeks, and months. Every session is data. Every day is growth.",
+    icon: "📚",
+    title: "50 Curated Topics",
+    desc: "Hand-written prompts across 5 categories — storytelling, opinions, pitches, reflections, and freestyle. Browse, search, and filter.",
   },
   {
     icon: "🔥",
-    title: "Streak System",
-    desc: "Build your streak. Earn Kitsune tails. Watch your fox grow from a single tail to a legendary nine-tailed master.",
+    title: "Streak Tracking",
+    desc: "Track your current streak, longest streak, and total sessions. Weekly dots show your consistency at a glance.",
   },
   {
-    icon: "🌲",
-    title: "Campfire Council",
-    desc: "Unlock new animal coaches as you progress — the Bear for pacing, the Raven for vocabulary, the Stag for presence.",
+    icon: "✈️",
+    title: "100% Offline",
+    desc: "No internet required. No account to create. No data ever leaves your phone. Just you and the fire.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Features() {
             Your personal <span className="text-warm-gold">campfire</span>
           </h2>
           <p className="text-ash text-base max-w-[500px] mx-auto leading-relaxed">
-            The oldest form of human connection, powered by the newest technology.
+            Everything you need to build a daily speaking habit.
           </p>
         </div>
 
