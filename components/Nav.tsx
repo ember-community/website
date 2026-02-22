@@ -11,9 +11,7 @@ export default function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4 flex items-center justify-between backdrop-blur-xl bg-gradient-to-b from-night-sky/95 to-night-sky/0">
       {/* Logo */}
       <div className="flex items-center gap-2.5">
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-ember to-warm-gold flex items-center justify-center">
-          <span className="font-display text-lg font-bold text-white">E</span>
-        </div>
+        <img src="/logo.png" alt="Ember" width={32} height={32} className="rounded-lg" />
         <span className="font-display text-[22px] font-bold">Ember</span>
       </div>
 
